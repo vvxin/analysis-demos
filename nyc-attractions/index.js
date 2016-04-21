@@ -50,18 +50,18 @@ function dataBuilder(gj, type) {
   });
 }
 
-// Set bounds to New York, New York
+// Set bounds to Beijing area
 var bounds = [
-  [-74.44747924804688, 40.54198241319326], // Southwest coordinates
-  [-73.46282958984375, 40.93011520598305]  // Northeast coordinates
+  [113.5, 38.1], // Southwest coordinates
+  [118.7, 42.4]  // Northeast coordinates
 ];
 
 var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/cika7lsg6003p9fm1y5eet742',
   hash: true,
-  center: [-74.0015, 40.7268],
-  zoom: 14,
+  center: [116.35, 39.80],
+  zoom: 10,
   maxBounds: bounds
 });
 
